@@ -1,6 +1,13 @@
 # sea-swimwear-core
 Este proyecto es el motor lógico de una tienda en línea de trajes de baño, desarrollado bajo el **TALL Stack**. El sistema gestiona todo el flujo de venta, desde la selección de productos hasta la confirmación de pedidos con lógica de pagos parciales.
 
+## Demostración en Vídeo
+Haz clic en la imagen a continuación para ver el flujo completo del sistema (Carrito, Pagos Zelle y Panel Admin):
+
+[![Ver Demo de Sea Swimwear](https://img.youtube.com/vi/qtr6EO3ELSY/0.jpg)](https://www.youtube.com/watch?v=qtr6EO3ELSY)
+
+> **Nota:** Si no puedes ver la imagen, puedes acceder directamente al video aquí: [Enlace al Demo](https://www.youtube.com/watch?v=qtr6EO3ELSY)
+> 
 ## Características Principales 
 * Desarrollo de una plataforma de comercio electrónico a medida con PHP/Laravel y WordPress, gestionando ventas al detal y al por mayor.
 * Implementación de un sistema de pagos híbrido (Pago Móvil, Zelle) con lógica de pagos fraccionados (abonos del 50%).
