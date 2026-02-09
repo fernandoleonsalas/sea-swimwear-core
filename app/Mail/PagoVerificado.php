@@ -1,0 +1,70 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\Order;          // Importa del Modelo de la Orden
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
+
+class PagoVerificado extends Mailable implements ShouldQueue
+{
+    use Queueable, SerializesModels;
+
+    // Propiedades públicas disponibles en la vista
+    public function __construct(
+        public Order $order, 
+        public $reporte
+    ) {
+        // Esto se ejecutará ANTES de entrar a la cola
+        // Log::info('Datos recibidos en el constructor:', [
+        //     'order_id' => $this->order->total_purchase
+        // ]);
+    }
+
+    // Configuración de reintentos en la misma clase
+    public $tries = 3; // Número de intentos antes de fallar definitivamente
+    public $backoff = 60; // Espera 60 segundos antes de reintentar si falla
+    
+    /**
+     * Get the message envelope.
+     */
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: 'Pago Verificado',
+        );
+    }
+
+    /**
+     * Get the message content definition.
+     */
+    public function content(): Content
+    {
+    //    // Esto guardará la información en storage/logs/laravel.log
+    //     Log::info('Verificando datos del correo:', [
+    //         'order_id' => $this->order->id,
+    //         'order_data' => $this->order->toArray(),
+    //         'reporte' => $this->reporte
+    //     ]);
+    //     Log::info('Datos de la orden en el Worker:', $this->order->getAttributes());total_purchase
+
+        return new Content(
+            markdown: 'emails.pago-verificado',
+        );
+    }
+
+    /**
+     * Get the attachments for the message.
+     *
+     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     */
+    public function attachments(): array
+    {
+        return [];
+    }
+}

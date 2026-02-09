@@ -1,0 +1,13 @@
+# Redirect requests to /public (staging hotfix for misconfigured DocumentRoot)
+
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+
+    # Skip if already under /public or if the request matches an existing file/dir
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+</IfModule>
