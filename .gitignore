@@ -1,30 +1,47 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# --- DEPENDENCIAS Y COMPILADOS ---
+/vendor/              # Librerías de PHP (Composer)
+/node_modules/        # Librerías de JS (NPM/Yarn)
+/public/build/        # Assets compilados por Vite o Mix
+/public/hot           # Archivos temporales de recarga en caliente
+/public/storage       # Enlace simbólico a los archivos de usuario
+public_html/storage   # Variante para hosting compartido
+public_html/hot       # Variante para hosting compartido
+bootstrap/compiled.php # Caché de optimización de Laravel antiguo
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# --- SEGURIDAD Y CREDENCIALES (CRÍTICO) ---
+.env* # Bloquea todos los archivos de entorno y sus variantes
+!.env.example         # Permite el archivo de ejemplo para otros desarrolladores
+auth.json             # Credenciales de repositorios privados
+*.key                 # Claves de encriptación de Laravel
+storage/pail/         # Logs en tiempo real de Laravel Pail
+storage/*.key         # Claves de seguridad almacenadas en storage
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# --- BASES DE DATOS Y LOGS ---
+*.log                 # Archivos de registro de errores
+*.sql                 # Volcados de bases de datos
+*.sqlite              # Bases de datos locales de SQLite
+npm-debug.log*        # Logs de errores de NPM
+yarn-error.log*       # Logs de errores de Yarn
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# --- ENTORNOS VIRTUALES Y TESTING ---
+/.vagrant             # Configuración de máquinas virtuales Vagrant
+Homestead.json        # Configuración de entorno Laravel Homestead
+Homestead.yaml        # Configuración de entorno Laravel Homestead
+.phpunit.result.cache # Caché de resultados de pruebas
+/.phpunit.cache/      # Directorio de caché de PHPUnit
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# --- EDITORES Y SISTEMA OPERATIVO ---
+.DS_Store             # Archivos invisibles de macOS
+Thumbs.db             # Caché de miniaturas de Windows
+/.idea/               # Configuración de PhpStorm
+/.vscode/             # Configuración de VS Code
+/.fleet/              # Configuración de JetBrains Fleet
+/.nova/               # Configuración de Panic Nova
+/.zed/                # Configuración de Zed Editor
+.phpactor.json        # Configuración de herramientas de PHP
+*.bak                 # Archivos de respaldo temporales
+*.tmp                 # Archivos temporales
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# --- CARPETAS DE ALMACENAMIENTO ---
+/app/storage/         # Estructura antigua de Laravel 4
+/storage/app/public/  # Evita subir archivos subidos por usuarios
