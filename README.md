@@ -14,20 +14,20 @@ El proyecto se basa en el **TALL Stack**, un conjunto de herramientas modernas p
 
 * **Frontend & UI:**
     * HTML5
-    * [Tailwind CSS](https://tailwindcss.com/)**: Framework de diseño basado en utilidades para interfaces personalizadas.
-    * [Alpine.js](https://alpinejs.dev/)**: Framework de JavaScript ligero para manejar la interactividad en el cliente.
-    * [Livewire](https://livewire.laravel.com/)**: Framework full-stack para Laravel que permite crear interfaces dinámicas sin salir de PHP.
-    * [JavaScript (ES6+)](https://developer.mozilla.org/es/docs/Web/JavaScript)**: Lógica adicional para el manejo de eventos y APIs del navegador.
-    * [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)**: Estilos personalizados y variables de diseño.
+    * [Tailwind CSS](https://tailwindcss.com/): Framework de diseño basado en utilidades para interfaces personalizadas.
+    * [Alpine.js](https://alpinejs.dev/): Framework de JavaScript ligero para manejar la interactividad en el cliente.
+    * [Livewire](https://livewire.laravel.com/): Framework full-stack para Laravel que permite crear interfaces dinámicas sin salir de PHP.
+    * [JavaScript (ES6+)](https://developer.mozilla.org/es/docs/Web/JavaScript): Lógica adicional para el manejo de eventos y APIs del navegador.
+    * [CSS3](https://developer.mozilla.org/es/docs/Web/CSS): Estilos personalizados y variables de diseño.
 * **Backend & Lógica de Negocio:**
-    * [Laravel](https://laravel.com/)**: Framework de PHP elegante y robusto bajo el patrón MVC.
-    * [Laravel Breeze](https://laravel.com/docs/starter-kits#laravel-breeze)**: Sistema de autenticación simple y ligero con soporte para Tailwind y Alpine.
-    * [PHP](https://www.php.net/)**: Lenguaje de programación principal del servidor.
-    * [Composer](https://getcomposer.org/)**: Gestor de dependencias para los paquetes de PHP.
+    * [Laravel](https://laravel.com/): Framework de PHP elegante y robusto bajo el patrón MVC.
+    * [Laravel Breeze](https://laravel.com/docs/starter-kits#laravel-breeze): Sistema de autenticación simple y ligero con soporte para Tailwind y Alpine.
+    * [PHP](https://www.php.net/): Lenguaje de programación principal del servidor.
+    * [Composer](https://getcomposer.org/): Gestor de dependencias para los paquetes de PHP.
 * **Almacenamiento & Servidor:**
     * [MariaDB](https://mariadb.org/) / [MySQL](https://www.mysql.com/)**: Motor de base de datos relacional.
-    * [Vite](https://vitejs.dev/)**: Herramienta de compilación rápida para los activos del frontend (CSS y JS).
-    * [Apache](https://httpd.apache.org/)**: Servidor web utilizado para el despliegue y desarrollo (vía XAMPP).
+    * [Vite](https://vitejs.dev/): Herramienta de compilación rápida para los activos del frontend (CSS y JS).
+    * [Apache](https://httpd.apache.org/): Servidor web utilizado para el despliegue y desarrollo (vía XAMPP).
 * **Servicios de Correo:**
     * Integración con SMTP (Spacemail) mediante colas de trabajo.
 
@@ -126,6 +126,5 @@ sea-swimwear-core/        - Raiz del proyecto
 
 Para cualquier consulta, soporte o información adicional sobre el proyecto, puedes contactar a:
 
-[Nombre/Nombre de Equipo]
-[Correo Electrónico]
-[Enlace Sitio Web/Portafolio (Opcional)]
+[Fernando León]
+[fernandoleom56@gmail.com]
