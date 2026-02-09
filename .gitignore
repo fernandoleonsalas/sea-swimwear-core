@@ -1,47 +1,83 @@
 # --- DEPENDENCIAS Y COMPILADOS ---
-/vendor/              # Librerías de PHP (Composer)
-/node_modules/        # Librerías de JS (NPM/Yarn)
-/public/build/        # Assets compilados por Vite o Mix
-/public/hot           # Archivos temporales de recarga en caliente
-/public/storage       # Enlace simbólico a los archivos de usuario
-public_html/storage   # Variante para hosting compartido
-public_html/hot       # Variante para hosting compartido
-bootstrap/compiled.php # Caché de optimización de Laravel antiguo
+# Librerías de PHP (Composer)
+/vendor/              
+# Librerías de JS (NPM/Yarn)
+/node_modules/        
+# Assets compilados por Vite o Mix
+/public/build/        
+# Archivos temporales de recarga en caliente
+/public/hot           
+# Enlace simbólico a los archivos de usuario
+/public/storage       
+# Variante para hosting compartido
+public_html/storage   
+# Variante para hosting compartido
+public_html/hot       
+# Caché de optimización de Laravel antiguo
+bootstrap/compiled.php 
 
 # --- SEGURIDAD Y CREDENCIALES (CRÍTICO) ---
-.env* # Bloquea todos los archivos de entorno y sus variantes
-!.env.example         # Permite el archivo de ejemplo para otros desarrolladores
-auth.json             # Credenciales de repositorios privados
-*.key                 # Claves de encriptación de Laravel
-storage/pail/         # Logs en tiempo real de Laravel Pail
-storage/*.key         # Claves de seguridad almacenadas en storage
+# Bloquea todos los archivos de entorno y sus variantes
+.env                  
+# Permite el archivo de ejemplo para otros desarrolladores
+!.env.example         
+# Credenciales de repositorios privados
+auth.json             
+# Claves de encriptación de Laravel
+*.key                 
+# Logs en tiempo real de Laravel Pail
+storage/pail/         
+# Claves de seguridad almacenadas en storage
+storage/*.key         
 
 # --- BASES DE DATOS Y LOGS ---
-*.log                 # Archivos de registro de errores
-*.sql                 # Volcados de bases de datos
-*.sqlite              # Bases de datos locales de SQLite
-npm-debug.log*        # Logs de errores de NPM
-yarn-error.log*       # Logs de errores de Yarn
+# Archivos de registro de errores
+*.log                 
+# Volcados de bases de datos
+*.sql                 
+# Bases de datos locales de SQLite
+*.sqlite              
+# Logs de errores de NPM
+npm-debug.log*        
+# Logs de errores de Yarn
+yarn-error.log*       
 
 # --- ENTORNOS VIRTUALES Y TESTING ---
-/.vagrant             # Configuración de máquinas virtuales Vagrant
-Homestead.json        # Configuración de entorno Laravel Homestead
-Homestead.yaml        # Configuración de entorno Laravel Homestead
-.phpunit.result.cache # Caché de resultados de pruebas
-/.phpunit.cache/      # Directorio de caché de PHPUnit
+# Configuración de máquinas virtuales Vagrant
+/.vagrant             
+# Configuración de entorno Laravel Homestead
+Homestead.json        
+# Configuración de entorno Laravel Homestead
+Homestead.yaml        
+# Caché de resultados de pruebas
+.phpunit.result.cache 
+# Directorio de caché de PHPUnit
+/.phpunit.cache/      
 
 # --- EDITORES Y SISTEMA OPERATIVO ---
-.DS_Store             # Archivos invisibles de macOS
-Thumbs.db             # Caché de miniaturas de Windows
-/.idea/               # Configuración de PhpStorm
-/.vscode/             # Configuración de VS Code
-/.fleet/              # Configuración de JetBrains Fleet
-/.nova/               # Configuración de Panic Nova
-/.zed/                # Configuración de Zed Editor
-.phpactor.json        # Configuración de herramientas de PHP
-*.bak                 # Archivos de respaldo temporales
-*.tmp                 # Archivos temporales
+# Archivos invisibles de macOS
+.DS_Store             
+# Caché de miniaturas de Windows
+Thumbs.db             
+# Configuración de PhpStorm
+/.idea/               
+# Configuración de VS Code
+/.vscode/             
+# Configuración de JetBrains Fleet
+/.fleet/              
+# Configuración de Panic Nova
+/.nova/               
+# Configuración de Zed Editor
+/.zed/                
+# Configuración de herramientas de PHP
+.phpactor.json        
+# Archivos de respaldo temporales
+*.bak                 
+# Archivos temporales
+*.tmp                 
 
 # --- CARPETAS DE ALMACENAMIENTO ---
-/app/storage/         # Estructura antigua de Laravel 4
-/storage/app/public/  # Evita subir archivos subidos por usuarios
+# Estructura antigua de Laravel 4
+/app/storage/         
+# Evita subir archivos subidos por usuarios
+/storage/app/public/  
